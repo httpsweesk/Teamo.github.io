@@ -1,32 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz Aniversário, Luiza!</title>
+    <title>Feliz Aniversário, Luiza! 💜</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
-        <h1>Feliz Aniversário, Luiza!</h1>
-        <p>Hoje é um dia muito especial, o dia em que celebramos você! Desde agosto de 2024, quando nos beijamos pela primeira vez, minha vida mudou para sempre. Eu te amo mais do que palavras podem expressar.</p>
-        <button onclick="startQuiz()">Quiz: Quanto você sabe sobre a gente?</button>
+        <h1>Feliz Aniversario, meu amor! 💜</h1>
+        <p>Meu amor, eu te amo pra krl Desde q vc chegou, tudo melhorou. Obrigado por tudo! Que esse aniversario seja só o primeiro de MILHARES q vamos passar juntios!</p>
+        <p>Vc é foda, perfeita, é incrível o quanto vc me deixa uga uga.💖</p>
+        <audio controls autoplay>
+            <source src="Savage.mp3" type="audio/mp3">
+            Seu navegador não suporta áudio.
+        </audio>
+
+        <!-- Imagem principal -->
+        <img src="https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/480276290_1017324060458014_8104601207879516948_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ClHNJl_2tjQQ7kNvgGjGJ5R&_nc_oc=Adj7vKG9P1mFYJ-q8bbKCfeh2MpX-xD-LpolrkZAjS_Im7jYqUFnEjwch8_3E7T6SZo&_nc_zt=23&_nc_ht=scontent-gru2-2.xx&_nc_gid=ApWGvMOYjnqi8Pg-HF-6SCL&oh=00_AYDwkeVxXzejQLqRdgrAygdpLrYG3qy84ekwnsbAUL1wbQ&oe=67B87A48" alt="Imagem especial para Luiza">
+
+        <!-- Botão para iniciar o quiz -->
+        <button onclick="startQuiz()">Bora testar seu amor por mim? 😏💘</button>
+
+        <!-- Quiz de amor -->
         <div id="quiz" class="hidden">
-            <h2>Quiz do Amor</h2>
-            <p>Quando foi nosso primeiro beijo?</p>
-            <button onclick="checkAnswer(1)">Julho de 2024</button>
-            <button onclick="checkAnswer(2)">Agosto de 2024</button>
-            <button onclick="checkAnswer(3)">Setembro de 2024</button>
+            <h2>Qual dessas opções descreve o q eu sinto por vc? 👀</h2>
+            <button onclick="checkAnswer(1)"> Menos que o PCN (sera?) 🤏</button>
+            <button onclick="checkAnswer(2)">Te amo mais q td! 💖</button>
+            <button onclick="checkAnswer(3)">É</button>
             <p id="feedback"></p>
         </div>
-        <h2>Nossa História</h2>
-        <p>Desde aquele primeiro beijo, construímos uma história cheia de amor, risos e momentos inesquecíveis. Eu sou eternamente grato por ter você ao meu lado.</p>
-        <h2>Galeria de Fotos</h2>
-        <p>Momentos que marcaram nossa história:</p>
-        <img src="LINK_DA_IMAGEM_1" alt="Foto 1">
-        <img src="LINK_DA_IMAGEM_2" alt="Foto 2">
+
+        <!-- Contador de tempo juntos -->
+        <h2>Já tamo nessa há:</h2>
+        <p id="contador"></p>
+
+        <!-- Seção para enviar uma mensagem -->
+        <div class="formulario">
+            <h2>Me manda um recado, 9vinha 💌</h2>
+            <textarea id="mensagem" placeholder="Escreve algo pra mim..."></textarea>
+            <button class="botao" onclick="enviarMensagem()">Enviar</button>
+        </div>
     </div>
+</div>
+<h2>Galeria de Fotos</h2>
+<p>Momentos que marcaram nossa história:</p>
+<img src="https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/480351974_1017314687125618_8410265399279318007_n.jpg?stp=dst-jpg_p526x296_tt6&nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PVICtjxhKUYQ7kNvgHog0Q&_nc_oc=AdiJW5uTmMQ5mJbDT5XP3nJRTtOgXrDQM_HmLKj8xiXn_6e2RThU3Cg39rYhblUus5M&_nc_zt=23&_nc_ht=scontent-gru1-1.xx&_nc_gid=AxGeDNm84ThyUIE8j28NxES&oh=00_AYDJzJ1KNkEXeWWkRppBLHTDhFAf0Yh-BMmwW8sF2ehJ0w&oe=67B883C2" alt="">
+<img src="https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/480221064_1017312973792456_1089605502095879486_n.jpg?stp=dst-jpg_s720x720_tt6&nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9ovS14IfuLEQ7kNvgEDGTnr&_nc_oc=Adio62FGW_87VW7_OK8JjH9VhDsUfxlZU8812zMsEpjQvq0pzmXPB8QbUjCFYGT02qQ&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=ACs8s6aQTFXdsHpL8i-RNQ&oh=00_AYDF75gagNG0Hov4oEncAKwmT1Zqr2fCYQJ8KcZA4942xg&oe=67B87279" alt="">
+<img src="https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/479491311_1017321930458227_3975193276802647273_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=aVrkbRgkILkQ7kNvgGENBCk&_nc_oc=AdhxoG2XaXEmgy86plQiP2LmrAvpe7TubRGBVYVPZQsIYM2Vp3DyijRkuc0TyfIoCtM&_nc_zt=23&_nc_ht=scontent-gru2-2.xx&_nc_gid=Amf-KvWH4FB7drTBIjTATnB&oh=00_AYBETT5SrpIP-5ae3eEWdSDBpVBvm0y4Y2GUjoPGHqr6Lw&oe=67B85E28" alt="Foto 3">
+<img src="https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/480483274_1017322283791525_4301187153968390208_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=x0z4X4gOBWkQ7kNvgE_CI9O&_nc_oc=Adh9sOp_W8rpVwdNQ08vetXA1KJwuOaepJOZZ1HH9KODBCG316zm7vqduWIS4eHbkUk&_nc_zt=23&_nc_ht=scontent-gru2-2.xx&_nc_gid=AzfnCFf_WxdBLbqejzNzf9P&oh=00_AYBrd-F4I3E3dWmgWF-urr71DCYzaF_QPmKRf54JdxF7kQ&oe=67B858B7" alt="">
+<img src="https://scontent-gru1-2.xx.fbcdn.net/v/t39.30808-6/480357113_1017322533791500_196595016656796327_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=RTes6KGq9pkQ7kNvgEbR5i3&_nc_oc=Adh4L8dh2EeIm3fDl15uTCQPPr3uYAm38Xr7rJaDGcPoe2wZny-h6DGD4awR-9d9xQc&_nc_zt=23&_nc_ht=scontent-gru1-2.xx&_nc_gid=APj20dA_GylwAKgX-WkOaX-&oh=00_AYAJ5aMa-S7y0Ln_voj_BS_NdRRWl95GUizXtfUoEceAnA&oe=67B8839D" alt="">
+<img src="https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/480545465_1017323667124720_1650057254347453133_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=tAan8Ko-5a4Q7kNvgFKIxNZ&_nc_oc=AdjAsEF72X0MnRs7In-_nZVtiFMhfYtFUpOjfAJ5hEmxZaC9ZLipxc5-OlbO039Y-8M&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=A3OYfyuw0qTcv5KhVhcoshN&oh=00_AYAzPMXw5lA3MUDuCiQjrbkHqzc4ZdQcGS0GoItG0l3X7g&oe=67B86708" alt="">
+<img src="https://scontent-gru1-1.xx.fbcdn.net/v/t39.30808-6/479904926_1017323810458039_3515644592042490027_n.jpg?nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=kMWrAwXNIMQQ7kNvgHDVyh1&_nc_oc=AdiJ6cTzxih4ZN7nH1bJ8kb7BGbcp7qyjQYUBeC6oYorujdyGEEL647lu96F_FBF70o&_nc_zt=23&_nc_ht=scontent-gru1-1.xx&_nc_gid=AqVU24wYUny4RC94euoGzL&oh=00_AYCFaKlMjjLnSHdcObe-H_6lcUY0ZCvHsd1G355zB1LAug&oe=67B85CA5" alt="">
+<img src="https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/480619443_1017323910458029_6220934312727832760_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AQAPYq4qNVoQ7kNvgGuSMt7&_nc_oc=AdhK-LFW_Y2EJlyp2qXJIK95foa6ETRq6jSqKBVcmvO_hqcSpFuI5McZJ11v2hj2o8I&_nc_zt=23&_nc_ht=scontent-gru2-2.xx&_nc_gid=AjfOSzLI7HMU_AO5BJSoUik&oh=00_AYBpQhNURdO0QIh0Q5X73rJqV57rMgeD9QPhgOfpBMnK5w&oe=67B8532E" alt="">
+<img src="https://scontent-gru2-2.xx.fbcdn.net/v/t39.30808-6/480276290_1017324060458014_8104601207879516948_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ClHNJl_2tjQQ7kNvgGjGJ5R&_nc_oc=Adj7vKG9P1mFYJ-q8bbKCfeh2MpX-xD-LpolrkZAjS_Im7jYqUFnEjwch8_3E7T6SZo&_nc_zt=23&_nc_ht=scontent-gru2-2.xx&_nc_gid=ApWGvMOYjnqi8Pg-HF-6SCL&oh=00_AYDwkeVxXzejQLqRdgrAygdpLrYG3qy84ekwnsbAUL1wbQ&oe=67B87A48" alt="">
+</div>
+
     <script src="script.js"></script>
 </body>
 </html>
